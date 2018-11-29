@@ -59,17 +59,6 @@ resource "aws_instance" "msr-test-instance-1" {
 	#"MSR-test-Instance-1"
   }
 }
-/*
-resource "aws_instance" "msr-test-instance-2" {
-  ami             = "ami-04ea996e7a3e7ad6b"
-  instance_type   = "t2.micro"
-  vpc_id          = "${aws_vpc.my_vpc.id}"
-  subnet_id       = "${aws_subnet.public.id}"
-  vpc_security_group_ids=["${aws_security_group.allow_http.id}"]
-  tags {
-    Name = "MSR-test-Instance-2"
-  }
-}
-*/
+
 
 
