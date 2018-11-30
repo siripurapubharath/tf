@@ -1,0 +1,15 @@
+---
+# This playbook sets up whole stack.
+- name: Configurations to "remote" host
+  hosts: tag_Type_ubuntu
+  remote_user: ubuntu # Remote user
+  become: yes
+
+  roles:
+     - role: git
+#    - role: setup
+#    - role: ansible-nvm
+#      nvm:
+#        version: v0.33.2
+#        node_version: '8.12.0'
+#        user: ubuntu
