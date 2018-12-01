@@ -7,9 +7,9 @@
 
   roles:
      - role: git
-#    - role: setup
-#    - role: ansible-nvm
-#      nvm:
-#        version: v0.33.2
-#        node_version: '8.12.0'
-#        user: ubuntu
+     - role: setup
+     - role: nvm
+       nvm:
+         version: v0.33.2
+         node_version: '8.12.0'
+         user: ubuntu
