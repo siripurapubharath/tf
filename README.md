@@ -14,6 +14,18 @@
 
       $ git clone https://github.com/venkat09docs/terraform.git
 
+Prerequisites:
+
+    1 - Customize the Secret and Access Keys in the following files
+      
+        $ vi terraform/ec-instance/variables.tf
+        
+        $ vi terraform/ansible/setAwsEnv.sh
+    
+    2 - Run the following script to set up the Environment variables
+    
+        $ ./terraform/ansible/setAwsEnv.sh
+
 Step1: Create two EC2 Instances in AWS Cloud using Terraform
 
       $ cd terraform/ec2-instance
